@@ -21,7 +21,6 @@ runs:
     using: 'docker'
     image: 'Dockerfile'
     args:
-
         - '--project'
         - '${{ inputs.project }}'
         - '--scan'
@@ -30,5 +29,5 @@ runs:
         - '${{ inputs.format }}'
         - '--out'
         - '${{ inputs.out }}'
-        - '--noupdate'
         - ${{ inputs.args }}
+        - '--noupdate'
